@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+
+/* დარქმოუდი */
+
+.dark{
+bottom: 20px; 
+right: 20px; 
+position: fixed;  
+width: 75px;  
+text-decoration: none;
+border: none;
+background-color: transparent;
+}
+
+.dark img{
+width: 70px;
+height: 70px;
+}
+
+.dark-mode {
+background-color: rgba(0, 0, 0, 0.865);
+color: white;
+}
+
+
+
+
+/* ჰედერი */
+
+
+body{
+overflow-x: hidden;
+}
+
+
+.head{
+margin-left: 100px;
+}
+
+/* ლოგო */
+.logo{
+  position: absolute;
+  top: 0.7%;
+  }
+  
+  /* იუზერი */
+  .user{
+  position: absolute;
+  left: 95%;
+  top: 1.4%;
+  }
+  
+  /* ადსახელება */
+  .got{
+  font-family: 'Staatliches', cursive;
+  position: absolute;
+  margin-left: 100px;
+  top: 1.2%;
+  width: 150px;
+  }
+
+  
+  /* ჰედერის ზოლი */
+  .line {
+    position: absolute;
+    border-bottom: 2px solid  #00563B;
+    width: 100%;
+    top: 75px;
+    opacity: 6%;
+    left: 0;
+}
+
+.line2 {
+  position: absolute;
+  border-bottom: 2px solid #00563B;
+  width: 100%;
+  top: 130px;
+  opacity: 6%;
+  left: 0;
+}
+
+
+/* ნავბარი */
+
+.nav ul li {
+display: inline-flex;
+padding: 40px;
+}
+
+.nav{
+position: absolute;
+display: inline-flex;
+top:45px;
+font-size: larger;
+left: 30px;
+}
+
+.nav ul li a {
+text-decoration: none;
+font-family: 'Josefin Sans', sans-serif;
+color: #00563B;
+}
+
+
+
+  h1 span {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  
+  .message {
+    background-color: #00563B;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-weight: 800;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 30px;
+    animation: openclose 20s ease-in-out infinite;
+  }
+  
+  .word1 {
+    font-family: sans-serif;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+/* დროპდაუნი */
+
+.dropbtn {
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #ffffff00;
+  color:  #00563B;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  background-color: #00563B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+ /* სერჩბარი */
+ .search{
+    position: absolute;
+    top: 4%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: rgb(252, 252, 252);
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid rgb(113, 113, 113);
+    padding: 5px;
+  }
+  
+  input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+  }
+  
+  .fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #000000;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+  }
+  
+  .search:hover,
+  .search:valid{
+   width: 200px;
+    cursor: pointer;
+  }
+  
+  .search:hover input,
+  .search:valid input{
+    display: block;
+  }
+  
+  .search:hover .fa,
+  .search:valid .fa{
+    background: #4b4b4b;
+    color: rgb(255, 255, 255);
+  }
+
+
+html,body{
+  margin:0;
+  
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+  text-decoration:none
+}
+
+
+/* მეინი */
+
+
+/* რეკლამა */
+
+.rek{
+  padding-top: 120px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  }
+  
+  .rek1{
+  width: 300px;
+  height: 175px;
+  background-color: rgb(210, 0, 0);
+  
+  }
+  
+  .rek1 a img{
+  margin-left: 70px;
+  margin-top: 40px;
+    }
+  
+  
+  
+  .rek3{
+    width: 300px;
+    height: 175px;
+  background-color: rgb(0, 0, 0);
+  }
+  
+  .rek3 a img{
+    margin-left: 90px;
+    margin-top: 20px;
+      }
+    
+  
+  
+  
+  .rek2 video{
+  
+  display: flex;
+  
+  width: 300px;
+  height: 175px;
+  border-radius: 5px;
+  border: solid rgb(255, 255, 255) 1px;
+  }
+  
+  
+ /* თაიმერი */
+
+ #countdownTitle{
+    text-align:center;
+    font-size:20px;
+    color:rgb(255, 255, 255);
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color:#00563B;
+    }
+  
+    #countdownTimer, #dateTimeText {
+      display: flex;
+      justify-content: center;
+      background:#00563B;
+      color:white;
+      padding-top: 0;
+      margin: 0;
+      
+    }
+    #countdownTimer> div  {
+      text-align: center;
+      font-size: 25px;
+      padding: 5px 5px;
+    }
+    #countdownTimer> span{
+    font-size:15px;
+    position:relative;
+    top:15px;
+    }
+  
+  
+  .list1{
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  
+.k2{
+padding-left: 40px;
+}
+  
+
+
+/* მთავარი ფოტო */
+
+.turi{
+   
+    margin-top: 30px; 
+    display: flex;
+    justify-content: center;
+margin-left: auto;
+margin-right: auto;
+    }
+
+.img-amst{
+
+background-color: #0c0a0a;
+}
+
+.amster1{
+width: 100%;
+height: 560px;
+}
+    
+    /* .line3{
+      position: absolute;
+      border-bottom: 2px solid #00563B;
+      width: 100%;
+      padding-top: 20px;
+      bottom: -40px;
+      opacity: 30%;
+    }
+
+
+
+
+    
+.right{
+display: flex;
+float: right;
+flex-direction: column;
+
+}
+
+
+
+/* ფასი და ყიდვა */
+
+
+
+.pricee{
+  display: inline-flex;
+}
+
+
+.price1{ 
+  font-family: 'Josefin Sans', sans-serif;
+  opacity: 90%;
+ 
+ }
+        
+.price2{
+font-family: 'Josefin Sans', sans-serif;
+opacity: 90%;
+font-size: xx-large;
+color: #00563B ;
+margin-bottom: -10px;
+}
+        
+        
+.line4{
+border-bottom: 2px solid  #00563B;
+width: 400px;
+padding-top: 2px;
+opacity: 30%;
+}
+
+
+.but1{
+outline: 0;
+border: none;
+box-shadow: none;
+cursor: pointer;
+margin-top: 5px;
+margin-left: 40px;
+padding: 9px 22px;
+font-size: 22px;
+height: 50px;
+font-weight: 400;
+color: #fff;
+text-align: center;
+line-height: normal;
+background: linear-gradient(90deg,rgb(63, 148, 148) 0,#0074e4 100%);
+border-radius: 50px;
+transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;}
+          
+.but1:hover{
+ box-shadow: 0 0 0 0.15rem #5ceace;
+ }
+       
+
+ /* საკონტაქტო */
+
+ .contact{
+  margin-top: 25px;
+  border:2px solid  rgba(63, 148, 148, 0.261) ;
+  border-radius: 5px;
+  width: 400px;
+  }
+  
+  .logoc {
+  margin-left: 10px;
+  margin-top:5px;
+  }
+  
+
+  .pin{
+  margin-left: 25px;
+  }
+  
+  .location, .location1{
+  margin-left: 60px;
+  margin-top: -42px;
+  }
+  
+  .calendar {
+    margin-left: 25px;
+  }
+  
+  .date{
+    margin-left: 60px;
+    margin-top: -42px;
+  }
+  
+  .date1{
+    margin-left: 60px;
+  }
+  
+  .date2{
+    margin-left: 60px;
+    margin-top: 2px;
+  }
+  
+  
+/* თბს */
+  
+  .dazgveva{
+  width: 400px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: rgb(0, 149, 255);
+  margin-top: 25px;
+  }
+  
+  .tbc{
+  margin-top: 2px;
+
+  }
+  
+  .buy1{
+  margin-left: 140px; 
+  width: 130px;
+  height: 30px;
+  background: rgb(249, 226, 97);
+  border-radius: 10px;
+  color: #000000;
+  text-align: center;
+  border: rgb(249, 226, 97);
+  }
+  
+  
+  .buy1 a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  .list1{
+  width: 500px;
+  }
+  
+  .list1 ul li{
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  align-content: space-around;
+  width: 200px;
+  
+  padding: 10px;
+  }
+  
+  .list1 ul li img{
+  border-radius: 5px ;
+  border: rgb(104, 103, 103) solid 1px;
+  width: 30px;
+  height: 30px;
+  }
+
+
+
+
+  .kkkkk{
+    width: 140px;
+    }
+
+
+.all{
+display: flex;
+justify-content: space-evenly;
+padding-top: 5em;
+}
+
+
+/* ფუტერი */
+ /* ფუტერი */
+
+ .footer{
+  display: flex;
+
+  justify-content: space-between;
+  background-color: #00563B;
+  margin-top: 200px;
+  padding: 1em;
+  }
+  
+  .p1 ul li{
+  color: white;
+  display: flex;
+  }
+  
+  
+  .p1 ul li a{
+  text-decoration: none;
+  color: white;
+  }
+  
+  
+  .p2 ul li{
+    color: white;
+    display: flex;
+    }
+    
+    
+    .p2 ul li a{
+    text-decoration: none;
+    color: white;
+    }
+    
+    
+  
+  
+    .p4 ul li{
+      color: white;
+      display: flex;
+      padding-top: 5px;  
+      }
+      
+      
+      .p4 ul li a{
+      text-decoration: none;
+      color: white;
+      }
+      
+    .p3{
+    display: flex;
+    }  
+     
+    .logon a{
+    text-decoration: none;
+    color: white;
+    }
+  
+    .logom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    }
+  
+
+
+ @media only screen and (max-width: 800px){
+.logof img, .logon a{
+display: none;
+}
+}
+
+
+@media (max-width:620px){
+.dropbtn{display: none;}
+.search{display: none;}
+.user{float: inline-start;}
+.rek1{display: none;}
+.rek3{display: none;}
+footer *{font-size: 0.9em;}
+.p3{display: flex;
+flex-wrap: wrap;}
+}
+
+@media (max-width:900px){
+    .rek1{display: none;}
+    .user{display: none;}
+    .all{flex-direction: column-reverse;
+    align-items: center;
+    gap: 3em;
+    }
+    }
