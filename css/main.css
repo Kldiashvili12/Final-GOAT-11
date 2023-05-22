@@ -389,6 +389,7 @@ border: #00563B;
   }
   
   
+  
     .card-img {
       position: absolute;
       object-fit: cover;
@@ -450,6 +451,8 @@ border: #00563B;
   .material-symbols-outlined {
     vertical-align: middle;
   }
+
+  
   
     
 /* სლაიდერი ფოტო გალერია */
@@ -858,13 +861,21 @@ margin-top: 200px;
 
 
 
-@media (max-width:1500px) {
+@media (max-width:1400px) {
     .airlines{  
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        margin-top: 250px;
-        margin-left: 100px;
+        margin-top: 50px;
     }
     }
+
+    @media (max-width:1830px) {
+      .card1{display: none;}
+      }
+      
+      @media (max-width:1380px) {
+        .card1{display: flex;}
+        }
+        
+ 
